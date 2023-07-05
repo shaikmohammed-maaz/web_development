@@ -2,7 +2,10 @@ body {
     margin: 10px;
     padding: 100px;
     border: blueviolet;
-    background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Aesthetic-Anime-Wallpaper-HD.jpg');
+    background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Aesthetic-Anime-Wallpaper-HD.jpg' );
+
+    
+    background-color:#003366;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

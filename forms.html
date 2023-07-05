@@ -6,48 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forms</title>
     <style>
-        body{
-            background-color: rgba(0, 300 ,0, 0.4);
+        body {
+            background-color: rgba();
+            padding: 20px;
+            margin: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
+        }
+
+        form {
+            align-items: center;
+        }
+        textarea{
+            text-align: left;
         }
     </style>
 </head>
 
 <body>
-    <form>
-        <h2>radio input</h2><br>
-        <input type="radio" id="tamil" name="fav_language">
-          <label for="tamil">Tamil</label><br>
-        <input type="radio" id="maths" name="fav_language" value="computer">
-          <label for="computer">Computer</label><br>
-        <input type="radio" id="chemistry" name="fav_language" value="chemistry">
-          <label for="chemistry">Chemistry</label><br>
+    <h1>Application form</h1>
+    <form autocomplete="off">
+        <fieldset>
+            <legend>personal details</legend>
+            <label for="surname">surname :</label>
+            <input id="surname" type="text" name="surname"><br><br>
+            <label for="fname">first name :</label>
+            <input id="fname" type="text" name="fname"><br><br>
 
+            <label for="lname">last name :</label>
+            <input id="lname" type="text" name="lname"><br><br>
+            <label for="fathname">father name :</label>
+            <input id="fathname" type="text" name="fathname"><br><br>
+            <label for="dob">date of birth :</label>
+            <input id="dob" type="date" name="dob"><br><br>
+            <label for="contact">contact no. :</label>
+            <input id="contact" type="number" min="10" max="1000000000" name="contact"><br><br>
+            <label for="mail">email :</label>
+            <input id="mail" type="email" required="@ ,." name="mail"><br><br>
+            <label for="qualification">qualification</label>
+            <select name="qualification" id="qualification">
+                <option value="BE.comp">BE(computer science)</option>
+                <option value="btech" selected>B.tech</option>
+                <option value="BCA">BCA</option>
+                <option value="mtech">M.tech</option>
+                <option value="B.sc it">B.Sc(IT)</option>
+            </select><br><br>
 
-        <h2>checkbox</h2>
-        <input type="checkbox" id="mazz" name="fav_friend">
-        <lable for="mazz"> Maaz</lable> <br>
-        <input type="checkbox" id="sakthi" name="fav_friend">
-        <label for="physics">Physics</label><br>
+            <label for="add">Address :</label>
+            <input id="add" type="text" size="80" maxlength="150" name="Address">
 
+        </fieldset>
+        <fieldset>
+            <legend>general details</legend>
 
+            <label for="univesity">univesity :</label>
+            <input id="univesity" type="text" name="univesity" maxlength="80" size="80"><br><br>
+            <label for="state">State :</label>
+            <select name="state" id="state">
+                <option value="tn">Tamil Nadu</option>
+                <option value="ka">Karnataka</option>
+                <option value="kl">kerela</option>
+                <option value="mi">Mumbai</option>
+                <option value="Dl">Delhi</option>
+            </select><br><br>
+            <label for="sal exp">salary expected :</label>
+            <input list="sal" >
+            <datalist id="sal">
+                <option value="25,000">25k</option>
+                <option value="30,000">30k</option>
+                <option value="40,000">40k</option>
+              
+            </datalist>
+            
+            <p>willing to transfer</p>
+            <label for="transfer">yes</label>
+            <input type="radio" id="transfer" name="trans">
+            <label for="transfer">No</label>
+            <input type="radio" name="trans" id="transfer">
 
-        <h2>text input</h2><br>
-        <label for="fname">first_name :</label>
-        <input type="text" id="fname" name="fname" value=""><br><br>
-        <label for="lname">last_name : </label>
-        <input type="text" id="lname" name="lname"><br><br>
-
-<h2>selectable checkbox</h2>
-
-    <input type="checkbox" id="select" name="height"  >
-  <select >
-    <option value="5 feets">5 feets </option>
-    <option value="6"> 6 feets</option>
-    <option value="7">7 feets</option>
-     <option value="8"> 8 feets</option>
-</select> <br><br>
+        </fieldset><br><br>
   
-<h2></h2>
+        <textarea name="feedback" id="feedback" cols="50" rows="10">give us your feedback....</textarea>
+
+
+
+
 
     </form>
 
