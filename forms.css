@@ -1,0 +1,44 @@
+body {
+    background-color: #f2d0d0;
+
+    font-size: 18px;
+    padding: 20px;
+    margin: 30px;
+}
+
+div {
+    text-align: right;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
+}
+
+form {
+    align-items: center;
+    padding: 80px;
+    ;
+    margin: auto;
+}
+
+textarea {
+    text-align: left;
+    padding: 2px, 2px;
+}
+
+input {
+    font-size: 20px;
+    border-radius: 2%;
+    padding: 5px;
+
+}
+
+input:focus {
+    background-color: lightgray;
+
+}
+
+fieldset {
+    border-radius: 5px;
+}

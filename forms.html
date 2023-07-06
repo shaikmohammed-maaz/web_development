@@ -5,47 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forms</title>
-    <style>
-        body {
-            background-color: rgba();
-            padding: 20px;
-            margin: 30px;
-        }
-
-        h1 {
-            text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif sans-serif;
-        }
-
-        form {
-            align-items: center;
-        }
-        textarea{
-            text-align: left;
-        }
-    </style>
+    <link rel="stylesheet" href="forms.css">
 </head>
 
-<body>
+<body>  
     <h1>Application form</h1>
+
     <form autocomplete="off">
-        <fieldset>
+        <!-- personal  -->
+        <fieldset >
             <legend>personal details</legend>
-            <label for="surname">surname :</label>
+            <div>
+                <label for="photo">photo</label>
+                <input type="file" name="photo" id="photo">
+            </div>
+        
+                   <label for="surname" >surname :</label>
             <input id="surname" type="text" name="surname"><br><br>
+
             <label for="fname">first name :</label>
             <input id="fname" type="text" name="fname"><br><br>
 
             <label for="lname">last name :</label>
             <input id="lname" type="text" name="lname"><br><br>
+
             <label for="fathname">father name :</label>
             <input id="fathname" type="text" name="fathname"><br><br>
+
             <label for="dob">date of birth :</label>
             <input id="dob" type="date" name="dob"><br><br>
-            <label for="contact">contact no. :</label>
-            <input id="contact" type="number" min="10" max="1000000000" name="contact"><br><br>
+
+            <label for="contact" required >contact no. :</label>
+            <input id="contact" type="tel" pattern="[0-9]" name="contact"><br><br>
+
             <label for="mail">email :</label>
             <input id="mail" type="email" required="@ ,." name="mail"><br><br>
+
+            <!-- select qualification -->
+
             <label for="qualification">qualification</label>
             <select name="qualification" id="qualification">
                 <option value="BE.comp">BE(computer science)</option>
@@ -58,7 +55,9 @@
             <label for="add">Address :</label>
             <input id="add" type="text" size="80" maxlength="150" name="Address">
 
-        </fieldset>
+        </fieldset><br><br>
+
+        <!-- general  -->
         <fieldset>
             <legend>general details</legend>
 
@@ -89,11 +88,12 @@
 
         </fieldset><br><br>
   
-        <textarea name="feedback" id="feedback" cols="50" rows="10">give us your feedback....</textarea>
+        <textarea name="feedback" id="feedback" cols="50" rows="10">give us your feedback....</textarea><br><br>
 
 
-
-
+<input type="submit" name="submit" >
+<input type="reset" name="reset" >
+<div><input type="button" name="next" id="next"></div>
 
     </form>
 
