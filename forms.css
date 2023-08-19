@@ -1,10 +1,13 @@
 body {
-    background-color: #f2d0d0;
-
+    background-color:rgb(214, 193, 219) !important;
+    /* background-image: url('https://c8.alamy.com/comp/2BA1DT4/wrinkled-crumpled-paper-texture-or-background-texture-of-crumpled-paper-white-paper-sheet-2BA1DT4.jpg'); */
+    background-attachment: fixed;
+    background-repeat: repeat-yx; 
     font-size: 18px;
     padding: 20px;
     margin: 30px;
 }
+
 
 div {
     text-align: right;
@@ -16,6 +19,7 @@ h1 {
 }
 
 form {
+    background-color: rgb(162, 131, 191); 
     align-items: center;
     padding: 80px;
     ;
@@ -23,6 +27,7 @@ form {
 }
 
 textarea {
+    background-color: rgb(170, 153, 186);
     text-align: left;
     padding: 2px, 2px;
 }
@@ -38,7 +43,11 @@ input:focus {
     background-color: lightgray;
 
 }
+legend{
+    color: aliceblue;
+}
 
 fieldset {
+    background-color: rgb(131, 103, 156);
     border-radius: 5px;
 }

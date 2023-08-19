@@ -1,53 +1,46 @@
+html {
+    background: url('https://www.pixelstalk.net/wp-content/uploads/images6/Aesthetic-Anime-Wallpaper-HD.jpg');
+    background-size: 110em;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.my{
+    font-size: 100px;
+    background-image: linear-gradient(violet,pink );
+    background-clip: text;-webkit-background-clip: text;color: transparent;}
 body {
     margin: 100px;
     padding: 60px;
     border: blueviolet;
-    background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Aesthetic-Anime-Wallpaper-HD.jpg' );
 
+    /* background-image: linear-gradient(lightblue,lightpink); */
+
+
+    /* background-color: #003366; */
     
-    background-color:#003366;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 ul {
-    list-style-type: none;
-    background-color: rgb(233, 189, 235);
-    opacity: 0.7;
-    width: 800px;
-    height: 3px;
-    padding: 30px;
-    padding-bottom: 40px;
-    overflow: hidden;
-    margin-top: -10px;
-    margin: right 10px;
-    padding-top:20px;
-    
+    background-color: rgba(164, 204, 245, 0.7);
+    padding: 6px;
 }
 
 li {
     display: inline;
-    margin: 30px;
-    padding: 0px,0px,20px, 0px;
-    text-align: center;
-}
-
-a {
-    text-decoration: rgb(206, 177, 233);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
+    padding: 20px;
 }
 
 li a:hover {
-    background-color: pink;
-    height: 30px;
-    color: #000;
-
+    background-color: antiquewhite;
+    padding: 5px;
 }
 
-.active {
-    background-color: gray;
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a.active {
     color: #000;
 }
 
@@ -62,5 +55,14 @@ h1 {
 
 h4,
 p {
+    /* background-color: rgba(165, 202, 202, 0.5); */
+    background-image: linear-gradient(rgba(195, 216, 223, 0.5), rgba(232, 191, 197, 0.5));
+    /* background-color:rgba(240,255,240,0.7) ; */
+    font-style: normal;
+    font-size: large;
     color: rgb(22, 24, 24);
+}
+
+#houtarou p {
+    font-style: normal;
 }
