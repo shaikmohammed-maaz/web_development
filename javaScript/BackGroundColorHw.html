@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+    text-align: center;
+    margin: 20px;
+}
+.buttons{
+    display: inline-flex;
+}
+button{
+    margin: 20px;
+    background-color: #78b29c; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+</style>
+
+
+</head>
+<body class="Body">
+    <h1 id="title" style="color: rgb(5, 44, 78);"></h1>
+    <div class = "buttons">
+    <button type="button" onclick="red()">Red</button>
+    <button onclick="green()">Green</button>
+    <button onclick="yellow()">Yellow</button>
+</div>
+
+<script>
+    function red(){
+        document.querySelector(".Body").style.backgroundColor = "red";
+        document.getElementById("title").innerHTML = "red";
+    }
+    function green(){
+        document.querySelector(".Body").style.backgroundColor = "green";
+        document.getElementById("title").innerHTML = "green";
+    }
+    function yellow(){
+        document.querySelector(".Body").style.backgroundColor = "yellow";
+        document.getElementById("title").innerHTML = "yellow";
+    }
+
+</script>
+
+
+</body>
+</html>
